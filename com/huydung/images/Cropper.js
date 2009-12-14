@@ -88,7 +88,10 @@ com.huydung.images.Cropper = function(url){
     * @public
     */
 		saveDesiredRatio : function(w, h){
-			if( w == 0 && h == 0 ){ desiredRatio = -1; return; };
+		  console.log("Trying to create desiredRatio of w = "+ w +" and h = "+h);
+			if( isNaN(w) ){ w = 0;};
+			if( isNaN(h) ){ h = 0;};
+      if( w == 0 && h == 0 ){ desiredRatio = -1; return; };
 			desiredRatio = {width: w, height: h, ratio: h == 0 ? 0 : w/h};
 			if( $img != null && $cropControl != null ){
 				produceControl();
@@ -111,6 +114,7 @@ com.huydung.images.Cropper = function(url){
     * @public
     */
 		produceCropControl: function(evt){ 
+		  //console.log('Produce Crop Controls');
 			$img = $(evt.currentTarget);
 			$cropControl = null;
       produceControl();
