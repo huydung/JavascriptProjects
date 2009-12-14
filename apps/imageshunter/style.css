@@ -1,0 +1,79 @@
+
+    a {
+    	text-transform: uppercase; letter-spacing: -1px;
+    }
+    body{
+      background-color: #C3C3C3;font-size:12px;
+      line-height:1.2em; overflow: scroll;
+    }
+    #wrapper{
+      width:980px;margin:10px auto;      
+    }
+    #nav{
+      float:right;margin:0;font-family:"Palatino linotype", "Times New Roman", serif;
+      font-size:14px;height:14px;
+    }
+    #nav li{list-style:none;display:inline;padding:0 1em 0 0;border:none;}
+    #nav li a{border:none;}
+    #searchPanel{
+      margin:-3px auto 0;padding:10px 20px 10px;clear:both;
+      border: #D3D3D3 10px solid;
+      border-bottom:none;background-color: #FFF;
+      border-bottom-width: 0;
+    }
+    #search-input label{padding-top:3px;}
+    #search-input{height:22px;}
+    #search-input label, #search-input input, #search-input button, #search-options label, #search-options input{
+      float:left;padding:0;
+    }
+    #search-input input, input[type=checkbox] {width:600px;height:22px;}
+    #search-input button{width:100px;margin-left:10px;}
+    #search-input label{width:150px;padding-top:6px;}
+    #search-options ul{
+      display:block;margin-left:150px;height:24px;padding:0;
+    }
+    #search-options ul li{
+      width:200px;float:left;height:22px;list-style: none;
+    }
+		#search-options ul li input{
+      width:30px;
+    } 
+    #search-options input.search-option{padding-top:2px;}
+    #search-options label{padding:6px 5px 0 0;}
+    #search-options input{padding:0;}
+    #app-body{
+      padding-top:15px;border-top:dotted 1px #B3B3B3;
+      clear:both;
+      border: #D3D3D3 10px solid;
+      border-top:none;background-color: #FFF;
+      border-top-width: 0;
+    }
+    #search-result{
+      float:left;width:480px;height:420px;overflow:auto;
+    }
+    
+    #preview{
+      margin:0;
+      overflow:auto;
+      width:480px;float:left;text-align:center;
+      background:url(preloader_big.gif) no-repeat 50% 30%;height:420px;
+    }
+    #preview div a{
+      font-size: 10px;
+    }
+    #preview img{
+      max-width: 460px;max-height:370px;
+    }
+    .image-res{
+      float:left;margin:0;width:150px;overflow:hidden;text-align:center;height:160px;
+    }
+    .image-res a{text-decoration: none;display:block;border:none;}
+    
+    #hover{display:none;}
+    #footer{
+      text-align: center;font-size:10px;padding-top:.5em;
+    }
+    .added-info{
+      border-bottom:solid 1px #3C3C3C;margin-bottom:2em;clear:both;padding-bottom:1em;
+      display:none;
+    }
